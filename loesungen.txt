@@ -1,5 +1,5 @@
 1c)
-notify() weckt nur EINEN beliebigen wartenden Thread auf. Das kann ein Thread der
+notify() weckt nur einen beliebigen wartenden Thread auf. Das kann ein Thread der
 falschen Sorte sein, zum Beispiel weckt ein Producer einen anderen Producer. Dieser sieht,
 dass der Stack immer noch voll ist, und legt sich sofort wieder schlafen. Der Consumer, der
 eigentlich weitermachen könnte, wird nie geweckt. Irgendwann schlafen alle Threads und
